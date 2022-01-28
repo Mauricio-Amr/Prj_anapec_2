@@ -9,7 +9,9 @@ const routes = require('./backend/src/routes')
 const PORT = process.env.PORT
 
 
-app.use(cors());
+app.use(cors({
+    origin: '*'
+}));
 app.use(bodyParser.urlencoded({extended: false}))
 app.use('/api', routes)
 app.use(express.static(__dirname +'/public'))
