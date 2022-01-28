@@ -165,7 +165,7 @@ async function addPecas_comp() {
 
 codigo_pc_comp = document.getElementById('fm-inp-codigo-comp').value
 resultadoVericadoComp = await verifCadCompativel(codigo_pc_comp)
-resultado = codigo_pc_comp == resultadoVericadoComp.codigo 
+resultado = (codigo_pc_comp == resultadoVericadoComp.codigo )
 
 if(!resultado){
 
@@ -264,7 +264,7 @@ async function inserirCompatibilidade() {
 async function verifCadCompativel(codigoDaPeca) {
     const url = `https://anapec.herokuapp.com/api/pecas/verificarcompativel/${codigoDaPeca}`
 
-     return await axios.get(url,configCors)
+     return await axios.get(url, {configCors})
         .then(response => {
 
             let data = response.data.result
