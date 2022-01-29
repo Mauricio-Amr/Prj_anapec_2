@@ -60,7 +60,7 @@ async function getPecas(codigo) {
     thead.appendChild(linha_1);
 
 
-
+   
     const url = `https://anapec2.herokuapp.com/api/pecas/${codigo}`
 
     return await axios.get(url, configCors)
