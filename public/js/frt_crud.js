@@ -1,5 +1,5 @@
 configCors =  {
-	headers: {'Origin': 'https://anapec2.herokuapp.com',
+	headers: {'Origin': '*',
 	  'Access-Control-Allow-Origin': '*',
 	}};
 
