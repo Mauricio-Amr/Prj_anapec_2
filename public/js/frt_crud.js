@@ -1,6 +1,10 @@
 configCors =  {
-	headers: {'Origin': '*',
+	headers: {
 	  'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Origin':'https://anapec2.herokuapp.com',
+    'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE',
+    "Access-Control-Allow-Headers": "X-Requested-With",
+    'Access-Control-Allow-Headers': 'Content-Type',
 	}};
 
 const url = "https://anapec.herokuapp.com/api/pecas";
