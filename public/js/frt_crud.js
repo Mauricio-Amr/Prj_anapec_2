@@ -6,6 +6,7 @@ configCors =  {
     'Access-Control-Allow-Headers': 'Content-Type',
 	}};
 
+    
 const url = "https://anapec2.herokuapp.com/api/pecas";
 
 const config = {};
